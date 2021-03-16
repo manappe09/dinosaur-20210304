@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------
+// Title
+// -----------------------------------------------------------------
+/**
+ * Title
+ */
+.c-title {
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+  @include font-roboto;
+}
+
+.c-title--center {
+  text-align: center;
+}
+
+.c-title--accent {
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin: .5em auto;
+    background: url('../../../images/slide02.png');
+  }
+}
+
+.c-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}

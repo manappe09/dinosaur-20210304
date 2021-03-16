@@ -1,0 +1,81 @@
+// -----------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------
+/**
+ * Button --base
+ */
+ .c-button {
+   display: block;
+   width: 100%;
+   padding: 0 1em;
+   font-size: 1.2rem;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   text-align: center;
+   transform: translateY(0);
+   &:hover {
+     // border: 5px solid #FBE6B9;
+     // box-shadow: none;
+    }
+    &:active {
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+  }
+  
+  /**
+   * Button --primary
+   */
+  .c-button--primary {
+    max-width: 350px;
+    height: 58px;
+    line-height: 58px;
+    background-color: $base-100-c;
+    border-radius: 30px;
+    box-shadow: 0 5px 0 #FBE6B9;
+  }
+
+/**
+  * Button --secondary
+  */  
+.c-button--secondary {
+  max-width: 250px;
+  height: 46px;
+  line-height: 46px;
+  background-color: $accent-100-c;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 $accent-80-c;
+}
+
+// -----------------------------------------------------------------
+// Like Button
+// -----------------------------------------------------------------
+.c-like-button {
+  display: flex;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-60-c;
+  border-radius: 50%;
+  color: $main-100-c;
+  font-size: 1.5em;
+  z-index: $z-level-l;
+  &::after {
+    content: '＋';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: .5em;
+    font-weight: bold;
+    color: $main-100-c;
+  }
+  &:hover {
+    color: $main-100-c;
+  }
+}

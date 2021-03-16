@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------
+// Nav
+// -----------------------------------------------------------------
+.p-nav {
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  width: 80vw;
+  height: 90vh;
+  background-color: $main-100-c;
+  border-radius: 10px 0 0 10px;
+  z-index: $z-level-xl;
+  @include pc {
+    width: 280px;
+  }
+}
+.p-nav__close {
+  width: 45px;
+  height: 45px;
+  margin-left: auto;
+  margin: 2vw auto 2vw 66vw;
+  background-color: #fff;
+  line-height: 45px;
+  border: none;
+  border-radius: 8px;
+  color: $main-100-c;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.p-nav__list {
+  width: 90%;
+  margin-left: auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.p-nav__category {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 1rem;
+}
+.p-nav__item {
+  width: 100%;
+  font-weight: bold;
+  &:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+  a {
+    display: block;
+    @extend .p-nav__category;
+  }
+}
+.p-nav__subitem {
+  text-indent: 1rem;
+  font-size: .9rem;
+  a {
+    color: $black-600-c;
+    height: 50px;
+    line-height: 50px;
+  }
+}

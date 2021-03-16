@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 70px;
+  background-color: $main-100-c;
+  z-index: $z-level-l;
+  @include pc {
+    width: 100%;
+  }
+}
+.p-header__title {
+  font-family: "Roboto", sans-serif;
+  padding-left: 20px;
+  font-size: 1.4rem;
+  line-height: 70px;
+  color: #fff;
+}
+.p-header__items {
+  display: flex;
+  flex-wrap: nowrap;
+  color: #fff;
+}
+.p-header__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 56px;
+  height: 70px;
+}
+.p-header__item__icon {
+  font-size: 1.9rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.p-header__item__name {
+  font-size: .7em;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------
+// breadcrumbs
+// -----------------------------------------------------------------
+.c-breadcrumbs {
+  margin: 1rem 0;
+  font-size: .7rem;
+  color: $black-300-c;
+}
+.c-breadcrumbs-link {
+  display: inline;
+  list-style: none;
+  &:not(:last-child)::after {
+    content: '＞';
+    padding: 0 .5em;
+  }
+  a {
+    color: $black-300-c;
+  }
+}

@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------
+// News
+// -----------------------------------------------------------------
+.p-news__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid $black-300-c;
+  list-style-type: none;
+  &:first-child {
+    border-top: 1px solid $black-300-c;
+  }
+}
+.p-news__date {
+  margin-right: 1em;
+  font-size: .8rem;
+}
+.p-news__tag {
+  padding: 0 1rem;
+  background-color: $base-80-c;
+  font-size: .7rem;
+}
+.p-news__link {
+  display: block;
+  font-size: .8rem;
+}
+.p-news__content {
+  & + .p-news__content {
+    margin-top: 1.8rem;
+  }
+}

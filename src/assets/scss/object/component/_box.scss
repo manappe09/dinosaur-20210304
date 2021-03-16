@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------
+// Box Item
+// -----------------------------------------------------------------
+/**
+ * Box Item --base
+ */
+.c-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.c-box__image {
+  flex: 1;
+  width: 100%;
+}
+.c-box__text {
+  flex: 1;
+}
+
+/**
+ * Box Item --row
+ */
+.c-box--row {
+  flex-direction: row;
+  margin-bottom: 1;
+}
+.c-box__text--row {
+  margin-left: 1rem;
+}
+
+/**
+ * Box Item --column
+ */
+.c-box--column {
+  flex-direction: column;
+  &:nth-child(even) {
+    margin-left: 1rem;
+  }
+}
+.c-box__text--column {
+  margin-top: .5em;
+}

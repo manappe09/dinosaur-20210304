@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------
+.p-footer {
+  background-color: $base-60-c;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+.p-footer__block {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.p-footer__subtitle {
+  font-size: .8rem;
+}
+.p-footer__list {
+  font-size: .7rem;
+}
+.p-footer__item {
+  display: inline;
+  &:not(:last-child)::after {
+    content: '＊';
+    padding: 0 .5em;
+    font-size: .4em;
+    color: $base-100-c;
+  }
+}
+.p-footer__copyright {
+  margin-top: 2rem;
+  font-size: .8rem;
+  text-align: center;
+}

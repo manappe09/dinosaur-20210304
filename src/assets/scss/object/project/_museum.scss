@@ -1,33 +1,17 @@
 // ==========================================================================
-// base
+// museum
 // ==========================================================================
 // -----------------------------------------------------------------
-// Typography
+// title
 // -----------------------------------------------------------------
-@mixin font-roboto {
-  font-family: 'Roboto', sans-serif;
-}
 
 // -----------------------------------------------------------------
-// Base styles
+// boxes
 // -----------------------------------------------------------------
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: '游ゴシック','YuGothic','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
-  line-height: 1.8;
-  letter-spacing: .05em;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-  transition: opacity .3s;
-  &:hover {
-    color: #000;
-    opacity: .7;
+.p-museum__list {
+  display: flex;
+  flex-wrap: wrap;
+  .c-box {
+    width: calc(50% - .5em);
   }
 }

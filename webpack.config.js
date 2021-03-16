@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const GoogleFontsPlugin = require("@beyonk/google-fonts-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -21,7 +22,12 @@ module.exports = {
         test: /\.scss$/,
         use: [
           "vue-style-loader",
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              esModule: false,
+            },
+          },
           // "style-loader",
           {
             loader: "css-loader",
@@ -33,9 +39,9 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              sourceMap: true
-            }
-          }
+              sourceMap: true,
+            },
+          },
         ],
       },
       {
@@ -58,8 +64,8 @@ module.exports = {
         test: /\.(png|svg|jpe?g|gif)$/,
         type: "asset/resource",
         generator: {
-          filename: "./assets/images/[name]-[contenthash].[ext]"
-        }
+          filename: "./assets/images/[name]-[contenthash].[ext]",
+        },
       },
     ],
   },
@@ -74,9 +80,31 @@ module.exports = {
       filename: "pages/demo/index.html",
       inject: "body",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/news/index.ejs",
+      filename: "pages/news/index.html",
+      inject: "body",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/news/1/index.ejs",
+      filename: "pages/news/1/index.html",
+      inject: "body",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/museum/index.ejs",
+      filename: "pages/museum/index.html",
+      inject: "body",
+    }),
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: "style.css",
+    }),
+    new GoogleFontsPlugin({
+      fonts: [
+        { family: "Source Sans Pro" },
+        { family: "Roboto", variants: ["400", "700"] },
+      ],
+      /* ...options */
     }),
   ],
   // ES5(IE11等)向けの指定（webpack 5以上で必要）
