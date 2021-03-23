@@ -11,3 +11,13 @@
 .p-column__list {
   @include boxWrapRow;
 }
+.p-column__category {
+  display: inline-block;
+  font-size: .8em;
+  margin-top: -.2em;
+  padding: 0 1em;
+  border-radius: 20px;
+  &[data-category="dinosaur"] {
+    background-color: rgb(216, 167, 30);
+  }
+}

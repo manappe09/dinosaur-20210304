@@ -7,6 +7,7 @@
  .c-button {
    display: block;
    width: 100%;
+   margin: auto;
    padding: 0 1em;
    font-size: 1.2rem;
    white-space: nowrap;
@@ -46,6 +47,7 @@
   background-color: $accent-100-c;
   border-radius: 4px;
   box-shadow: 0 5px 0 $accent-80-c;
+  font-size: .9rem;
 }
 
 // -----------------------------------------------------------------
