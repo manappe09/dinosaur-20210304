@@ -9,7 +9,6 @@
   margin-bottom: 1rem;
 }
 .c-box__image {
-  flex: 1;
   width: 100%;
 }
 .c-box__text {
@@ -22,6 +21,10 @@
 .c-box--row {
   flex-direction: row;
   margin-bottom: 1;
+}
+.c-box__image--row {
+  width: 40%;
+  object-fit: cover;
 }
 .c-box__text--row {
   margin-left: 1rem;

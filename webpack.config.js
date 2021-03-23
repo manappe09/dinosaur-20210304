@@ -3,8 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const GoogleFontsPlugin = require("@beyonk/google-fonts-webpack-plugin");
+const glob = require('glob');
+let tplName;
+let fileName;
 
-module.exports = {
+const Webpackconfig = {
   mode: "development",
   devtool: "inline-source-map",
   entry: "./src/index.js",
@@ -75,26 +78,27 @@ module.exports = {
       filename: "index.html",
       inject: "body",
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/demo/index.ejs",
-      filename: "pages/demo/index.html",
-      inject: "body",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/news/index.ejs",
-      filename: "pages/news/index.html",
-      inject: "body",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/news/1/index.ejs",
-      filename: "pages/news/1/index.html",
-      inject: "body",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/museum/index.ejs",
-      filename: "pages/museum/index.html",
-      inject: "body",
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/demo/index.ejs",
+    //   filename: "pages/demo/index.html",
+    //   inject: "body",
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/news/index.ejs",
+    //   filename: "pages/news/index.html",
+    //   inject: "body",
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/news/1/index.ejs",
+    //   filename: "pages/news/1/index.html",
+    //   inject: "body",
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/museum/index.ejs",
+    //   filename: "pages/museum/index.html",
+    //   inject: "body",
+    // }),
+    
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: "style.css",
@@ -110,3 +114,26 @@ module.exports = {
   // ES5(IE11等)向けの指定（webpack 5以上で必要）
   target: ["web", "es5"],
 };
+
+glob
+  .sync("**/*.ejs", {
+    // 現在地を下のパスとし、上のパターンをさがす。
+    cwd: "src/pages",
+  })
+  .forEach((jsName) => {
+    // tplName -> demo/index.ejs
+    tplName = jsName;
+    // fileName -> demo/index.html
+    fileName = path.dirname(jsName, ".ejs") + "/index.html";
+    Webpackconfig.plugins.push(
+      new HtmlWebpackPlugin({
+        template: path.resolve("./src/pages/", tplName),
+        filename: `pages/${fileName}`,
+        inject: "body",
+        // includeSiblingChunks: true,
+        // chunks: [tplName],
+      })
+    );
+  });
+
+module.exports = Webpackconfig;

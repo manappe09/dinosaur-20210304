@@ -5,6 +5,7 @@
 @import "foundation/_reset";
 @import "foundation/_variables";
 @import "foundation/_base";
+@import "foundation/_mixin";
 
 // ==========================================================================
 // Layout
@@ -39,6 +40,8 @@
 @import "object/project/_database";
 @import "object/project/_news";
 @import "object/project/_museum";
+@import "object/project/_dinosaur";
+@import "object/project/_column";
 
 // -----------------------------------------------------------------
 // Utility

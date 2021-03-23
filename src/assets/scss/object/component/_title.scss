@@ -5,7 +5,7 @@
  * Title
  */
 .c-title {
-  margin: 1rem auto;
+  margin: 3.5rem auto;
   font-size: 1.4rem;
   font-weight: bold;
   @include font-roboto;
@@ -21,8 +21,8 @@
     display: block;
     width: 80px;
     height: 40px;
-    margin: .5em auto;
-    background: url('../../../images/slide02.png');
+    margin: -.5em auto 0;
+    background: url('../../../images/heading-accent.png') center center / contain no-repeat;
   }
 }
 
