@@ -1,5 +1,5 @@
 // ==========================================================================
-// museum
+// dinosaur
 // ==========================================================================
 // -----------------------------------------------------------------
 // title
@@ -9,5 +9,18 @@
 // boxes
 // -----------------------------------------------------------------
 .p-dinosaur__list {
-  @include boxWrapRow;
+  @include boxWrapColumn;
+}
+.p-dinosaur__category {
+  @include boxLabel;
+  color: #fff;
+  &[data-category="dragon"] {
+    background-color: #c45719;
+  }
+  &[data-category="bird"] {
+    background-color: #0f75b9;
+  }
+}
+.p-dinosaur__eyecatch {
+  @include pageEyecatch;
 }

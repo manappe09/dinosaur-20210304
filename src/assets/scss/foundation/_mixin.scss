@@ -10,17 +10,36 @@
   }
 }
 // -----------------------------------------------------------------
-// Box Wrap --row
+// Box Wrap
 // -----------------------------------------------------------------
 @mixin boxWrapRow {
 }
-// -----------------------------------------------------------------
-// Box Wrap --column
-// -----------------------------------------------------------------
 @mixin boxWrapColumn {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   .c-box {
     width: calc(50% - .5em);
   }
+}
+// -----------------------------------------------------------------
+// Box label
+// -----------------------------------------------------------------
+@mixin boxLabel {
+  display: inline-block;
+  font-size: .8em;
+  margin-top: -.2em;
+  padding: 0 1em;
+  border-radius: 20px;
+  vertical-align: top;
+}
+
+// -----------------------------------------------------------------
+// page eyecatch
+// -----------------------------------------------------------------
+@mixin pageEyecatch {
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  object-fit: cover;
 }

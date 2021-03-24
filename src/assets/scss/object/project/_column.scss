@@ -12,12 +12,21 @@
   @include boxWrapRow;
 }
 .p-column__category {
-  display: inline-block;
-  font-size: .8em;
-  margin-top: -.2em;
-  padding: 0 1em;
-  border-radius: 20px;
+  @include boxLabel;
+  color: #fff;
   &[data-category="dinosaur"] {
-    background-color: rgb(216, 167, 30);
+    background-color: #c45719;
   }
+  &[data-category="knowledge"] {
+    background-color: #0f75b9;
+  }
+  &[data-category="history"] {
+    background-color: #0c964a;
+  }
+  &[data-category="expert"] {
+    background-color: #a1980d;
+  }
+}
+.p-column__eyecatch {
+  @include pageEyecatch;
 }

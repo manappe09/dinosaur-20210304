@@ -11,30 +11,18 @@
 .p-museum__list {
   @include boxWrapRow;
 }
-%span_text {
-  font-size: .8em;
-  margin-top: -.2em;
-  padding: 0 1em;
-  border-radius: 20px;
-}
 .p-museum__area {
-  @extend %span_text;
-  display: inline-block;
+  @include boxLabel;
   &[data-area="ibaraki"] {
     background-color: rgb(216, 167, 30);
   }
 }
 .p-museum__category {
-  @extend %span_text;
-  display: inline-block;
+  @include boxLabel;
   &[data-category="park"] {
     background-color: rgb(152, 138, 236);
   }
 }
 .p-museum__eyecatch {
-  display: block;
-  width: 100%;
-  height: 200px;
-  margin-bottom: 1rem;
-  object-fit: cover;
+  @include pageEyecatch;
 }

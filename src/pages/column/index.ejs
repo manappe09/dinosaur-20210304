@@ -1,3 +1,23 @@
+<% 
+const data = [
+  {
+    label: 'dinosaur',
+    name: '恐竜について',
+  },
+  {
+    label: 'knowledge',
+    name: 'おもしろ知識',
+  },
+  {
+    label: 'history',
+    name: '恐竜の歴史',
+  },
+  {
+    label: 'expert',
+    name: 'はかせになる',
+  }
+];
+%> 
 <%- include('../../components/_head') %>
 
   <body class="l-inner">
@@ -7,13 +27,13 @@
           <%- include('../../components/_breadcrumbs') %>
             <h2 class="c-title c-title--accent c-title--center">コラム一覧</h2>
             <ul class="p-column__list">
-              <%- include('../../components/_ColumnBox') %>
-              <%- include('../../components/_ColumnBox') %>
-              <%- include('../../components/_ColumnBox') %>
-              <%- include('../../components/_ColumnBox') %>
-              <%- include('../../components/_ColumnBox') %>
-              <%- include('../../components/_ColumnBox') %>
-              <%- include('../../components/_ColumnBox') %>
+              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
+              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
+              <%- include('../../components/_ColumnBox', {categoryData: data[1]}) %>
+              <%- include('../../components/_ColumnBox', {categoryData: data[2]}) %>
+              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
+              <%- include('../../components/_ColumnBox', {categoryData: data[3]}) %>
+              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
             </ul>
         </main>
         <%- include('../../components/_footer') %>
