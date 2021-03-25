@@ -2,11 +2,7 @@
 // dinosaur
 // ==========================================================================
 // -----------------------------------------------------------------
-// title
-// -----------------------------------------------------------------
-
-// -----------------------------------------------------------------
-// boxes
+// dinosaur
 // -----------------------------------------------------------------
 .p-dinosaur__list {
   @include boxWrapColumn;
@@ -23,4 +19,32 @@
 }
 .p-dinosaur__eyecatch {
   @include pageEyecatch;
+  margin-bottom: 3rem; // Cancel margin-bottom in pageEyeCatch
+}
+.p-dinosaur__slide {
+  position: relative;
+  top: 0;
+  left: 0;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+    display: block;
+    background: url(../../../images/dinosaur-accent.png) center center / contain no-repeat;
+    width: 160px;
+    height: 40px;
+    z-index: $z-level-xs;
+  }
+}
+// -----------------------------------------------------------------
+// related
+// -----------------------------------------------------------------
+.p-related__list {
+  @include boxWrapRow;
+}
+.p-related__item {
+  &:not(:first-child) {
+    margin-left: .5em;
+  }
 }

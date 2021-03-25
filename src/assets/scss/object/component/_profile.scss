@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------
+// Profile
+// -----------------------------------------------------------------
+.c-profile {
+  border: 2px dotted $main-100-c;
+  margin: 1rem 0; 
+  padding: .5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  color: $main-100-c;
+}
+.c-profile__item {
+  list-style: none;
+  display: inline-block;
+  &:not(:last-child)::after {
+    content: '/';
+    padding: 0 0 0 .4em;
+  }
+}

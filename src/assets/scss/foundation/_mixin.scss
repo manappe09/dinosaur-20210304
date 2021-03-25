@@ -13,6 +13,7 @@
 // Box Wrap
 // -----------------------------------------------------------------
 @mixin boxWrapRow {
+  display: flex;
 }
 @mixin boxWrapColumn {
   display: flex;
