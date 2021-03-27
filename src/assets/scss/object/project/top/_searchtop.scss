@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------
+// Saerch Top
+// -----------------------------------------------------------------
+.p-searchtop__list {
+  display: flex;
+  justify-content: space-between;
+}
+.p-searchtop__image {
+  border: 3px $main-80-c solid;
+}
+.p-searchtop__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48.5%;
+  height: 80px;
+  background-color: $main-80-c;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}

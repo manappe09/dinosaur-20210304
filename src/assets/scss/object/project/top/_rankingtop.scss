@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------
+// Ranking Top
+// -----------------------------------------------------------------
+.p-rankingtop__list {
+  display: flex;
+  list-style: none;
+}
+.p-rankingtop__item {
+  & + .p-rankingtop__item {
+    margin-left: .5em;
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 40px;
+    margin: auto;
+  }
+  &[data-index="1"]::before {
+    background: url('../../../../images/ranking01.png') center center / contain no-repeat;
+    height: 50px;
+    margin-top: -10px;
+  }
+  &[data-index="2"]::before {
+    background: url('../../../../images/ranking02.png') center center / contain no-repeat;
+  }
+  &[data-index="3"]::before {
+    background: url('../../../../images/ranking03.png') center center / contain no-repeat;
+  }
+}
+
+.p-rankingtop__image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}

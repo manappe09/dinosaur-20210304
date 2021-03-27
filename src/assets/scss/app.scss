@@ -38,11 +38,15 @@
 @import "object/project/_header";
 @import "object/project/_nav";
 @import "object/project/_footer";
-@import "object/project/_database";
-@import "object/project/_news";
-@import "object/project/_museum";
-@import "object/project/_dinosaur";
-@import "object/project/_column";
+@import "object/project/pages/_news";
+@import "object/project/pages/_museum";
+@import "object/project/pages/_dinosaur";
+@import "object/project/pages/_column";
+@import "object/project/pages/_guide";
+@import "object/project/top/_recentNews";
+@import "object/project/top/_searchtop";
+@import "object/project/top/_rankingtop";
+@import "object/project/top/_museumtop";
 
 // -----------------------------------------------------------------
 // Utility

@@ -11,10 +11,6 @@
   @include font-roboto;
 }
 
-.c-title--center {
-  text-align: center;
-}
-
 .c-title--accent {
   &::after {
     content: '';

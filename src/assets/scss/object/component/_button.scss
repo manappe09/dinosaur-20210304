@@ -15,10 +15,6 @@
    text-overflow: ellipsis;
    text-align: center;
    transform: translateY(0);
-   &:hover {
-     // border: 5px solid #FBE6B9;
-     // box-shadow: none;
-    }
     &:active {
       box-shadow: none;
       transform: translateY(2px);
@@ -50,6 +46,17 @@
   font-size: .9rem;
 }
 
+/**
+  * Button --third
+  */  
+.c-button--third {
+  max-width: 200px;
+  height: 38px;
+  line-height: 38px;
+  background-color: $main-60-c;
+  border-radius: 4px;
+  font-size: .9rem;
+}
 // -----------------------------------------------------------------
 // Like Button
 // -----------------------------------------------------------------

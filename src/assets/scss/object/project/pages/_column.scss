@@ -1,5 +1,5 @@
 // ==========================================================================
-// museum
+// column
 // ==========================================================================
 // -----------------------------------------------------------------
 // title
@@ -8,21 +8,25 @@
 // -----------------------------------------------------------------
 // boxes
 // -----------------------------------------------------------------
-.p-museum__list {
+.p-column__list {
   @include boxWrapRow;
 }
-.p-museum__area {
+.p-column__category {
   @include boxLabel;
-  &[data-area="ibaraki"] {
-    background-color: rgb(216, 167, 30);
+  color: #fff;
+  &[data-category="dinosaur"] {
+    background-color: $column-dinosaur-c;
+  }
+  &[data-category="knowledge"] {
+    background-color: $column-knowledge-c;
+  }
+  &[data-category="history"] {
+    background-color: $column-history-c;
+  }
+  &[data-category="expert"] {
+    background-color: $column-expert-c;
   }
 }
-.p-museum__category {
-  @include boxLabel;
-  &[data-category="park"] {
-    background-color: rgb(152, 138, 236);
-  }
-}
-.p-museum__eyecatch {
+.p-column__eyecatch {
   @include pageEyecatch;
 }
