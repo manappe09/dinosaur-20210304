@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <title>Document</title>
+<link href="style.css" rel="stylesheet"></head>
+<body>
+  <header class="p-header">
+  <h1 class="p-header__title"><a href="/">恐竜ずかん</a></h1>
+  <ul class="p-header__items">
+    <li class="p-header__item">
+      <i class="fas fa-search p-header__item__icon"></i>
+      <h3 class="p-header__item__name">さがす</h3>
+    </li>
+    <li class="p-header__item">
+      <i class="fas fa-door-open p-header__item__icon"></i>
+      <h3 class="p-header__item__name">ログイン</h3>
+    </li>
+    <li class="p-header__item">
+      <i class="fas fa-bars p-header__item__icon"></i>
+      <h3 class="p-header__item__name">メニュー</h3>
+    </li>
+  </ul>
+</header>
+    <nav class="p-nav">
+  <button class="p-nav__close">×</button>
+  <ul class="p-nav__list">
+    <li class="p-nav__item">
+      <p class="p-nav__category">カテゴリからさがす</p>
+      <ul class="p-nav__sublist">
+        <li class="p-nav__subitem"><a href="">竜盤目</a></li>
+        <li class="p-nav__subitem"><a href="">鳥盤目</a></li>
+      </ul>
+    </li>
+    <li class="p-nav__item"><a href="">人気からさがす</a></li>
+    <li class="p-nav__item"><a href="">特徴からさがす</a></li>
+    <li class="p-nav__item"><a href="">新規登録</a></li>
+    <li class="p-nav__item"><a href="">ご利用ガイド</a></li>
+    <li class="p-nav__item"><a href="">よくある質問</a></li>
+  </ul>
+</nav>
+  <!-- 検索窓 -->
+  <!-- <input type="text" class="c-searchbox">
+  <button class="c-searchbox__button">検索</button> -->
+  <!-- /検索窓 -->
+  <main class="l-main">
+    <img src="./assets/images/slide01-d201836306087999f809..png" alt="">
+  <!-- 最近のお知らせ -->
+    <section class="p-newstop u-mgt-40 u-mgb-80">
+      <ul class="p-newstop__list">
+        <li class="p-newstop__item"><a href="./pages/news/4"><span class="p-news__category" data-category="announce">ご注意</span>一部利用規約が変更になりました。</a></li>
+        <li class="p-newstop__item"><a href="./pages/news/3"><span class="p-news__category" data-category="news">お知らせ</span>追加機能〇〇をリリースしました！</a></li>
+        <li class="p-newstop__item"><a href="./pages/news/2"><span class="p-news__category" data-category="news">お知らせ</span>新しい公園を追加しました！</a></li>
+      </ul>
+      <a href="./pages/news" class="c-button c-button--third u-mgt-20">お知らせ一覧へ</a>
+    </section>
+  <!-- /最近のお知らせ -->
+  <!-- 恐竜を探す -->
+    <section class="p-searchtop u-mgb-80">
+      <img class="p-searchtop__image" src="./assets/images/search-dinosaur01-5f071138d161369c227d..png" alt="">
+      <div class="p-searchtop__list u-mgt-10">
+        <a href="" class="p-searchtop__link">種類で<br>さがす</a>
+        <a href="" class="p-searchtop__link">50音順で<br>さがす</a>
+      </div>
+    </section>
+    <!-- /恐竜を探す -->
+    <!-- 恐竜ランキング -->
+    <section class="p-rankingtop u-mgb-80">
+      <h2 class="c-title c-title--primary u-align-c u-mgb-20">恐竜人気ランキング</h2>
+      <ul class="p-rankingtop__list">
+        <li class="p-rankingtop__item" data-index="1"><a href=""><img class="p-rankingtop__image" src="./assets/images/slide01-d201836306087999f809..png" alt=""></a></li>
+        <li class="p-rankingtop__item" data-index="2"><a href=""><img class="p-rankingtop__image" src="./assets/images/slide01-d201836306087999f809..png" alt=""></a></li>
+        <li class="p-rankingtop__item" data-index="3"><a href=""><img class="p-rankingtop__image" src="./assets/images/slide01-d201836306087999f809..png" alt=""></a></li>
+      </ul>
+    </section>
+    <!-- /恐竜ランキング -->
+    <!-- 博物館・公園 -->
+    <section class="p-museumtop u-mgb-40">
+      <h2 class="c-title c-title--primary c-title--accent u-align-c u-mgb-20">恐竜に会いにいく</h2>
+      <ul class="p-museumtop__list">
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+      </ul>
+      <a href="./pages/museum" class="c-button c-button--primary">博物館・公園一覧へ</a>
+    </section>
+    <!-- /博物館・公園 -->
+    <!-- バナー -->
+    <a href=""><img class="c-banner__image" src="./assets/images/top-banner01-3c14f0568cb42e232c38..png" alt="" width="415" height="140"></a>
+    <a href=""><img class="c-banner__image" src="./assets/images/top-banner02-3753ea362c9427433432..png" alt="" width="415" height="140"></a>
+    <!-- /バナー -->
+    <!-- コラム -->
+    <section class="p-columntop u-mgb-40">
+      <h2 class="c-title c-title--primary c-title--accent u-align-c u-mgb-20">コラムを読む</h2>
+      <ul class="p-columntop__list">
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+        <div class="c-box c-box--column">
+          <img class="c-box__image c-box__image--column" src="./assets/images/slide02-3f9f10d02b45a3e4663f..png" alt="" width="100" height="100">
+          <div class="c-box__text c-box__text--column">
+            <span class="p-museum__area" data-area="ibaraki">茨城県</span>
+            <span class="p-museum__category" data-category="park">公園</span>
+            <p>恐竜の大きな看板がお出迎え。休日は家族で賑わう広々とした公園です。</p>
+          </div>
+        </div>
+      </ul>
+      <a href="./pages/column" class="c-button c-button--primary">コラムをもっと読む</a>
+    </section>
+    <!-- /コラム -->
+  </main>
+  <footer class="p-footer">
+  <div class="p-footer__block">
+    <p class="p-footer__subtitle">ヘルプ</p>
+    <ul class="p-footer__list">
+      <li class="p-footer__item"><a href="/pages/dinosaur">恐竜をさがす</a></li>
+      <li class="p-footer__item"><a href="/pages/guide">ご利用ガイド</a></li>
+      <li class="p-footer__item"><a href="/pages/faq">よくある質問</a></li>
+    </ul>
+  </div>
+  <div class="p-footer__block">
+    <p class="p-footer__subtitle">サイトについて</p>
+    <ul class="p-footer__list">
+      <li class="p-footer__item"><a href="/pages/common/agreement">利用規約</a></li>
+      <li class="p-footer__item"><a href="/pages/common/privacy">プライバシーポリシー</a></li>
+      <li class="p-footer__item"><a href="/pages/common/contact">お問い合わせ</a></li>
+    </ul>
+  </div>
+  <p class="p-footer__copyright">©️manappe 2021</p>
+</footer>
+<script defer src="main-c7275bf7a74631d442ca.js"></script></body>
+</html>
