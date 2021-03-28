@@ -12,16 +12,20 @@
   <!-- 検索窓 -->
   <input type="text" class="c-searchbox">
   <button class="c-searchbox__button">検索</button>
+  <!-- /検索窓 -->
   <main class="l-main">
     <img src="./assets/images/slide01.png" alt="">
-    <section class="p-recent_news u-mgt-40 u-mgb-80">
-      <ul class="p-recent_news__list">
-        <li class="p-recent_news__item"><a href="./pages/news/4"><span class="p-recent_news__category" data-category="announce">ご注意</span>一部利用規約が変更になりました。</a></li>
-        <li class="p-recent_news__item"><a href="./pages/news/3"><span class="p-recent_news__category" data-category="news">お知らせ</span>追加機能〇〇をリリースしました！</a></li>
-        <li class="p-recent_news__item"><a href="./pages/news/2"><span class="p-recent_news__category" data-category="news">お知らせ</span>新しい公園を追加しました！</a></li>
+  <!-- 最近のお知らせ -->
+    <section class="p-newstop u-mgt-40 u-mgb-80">
+      <ul class="p-newstop__list">
+        <li class="p-newstop__item"><a href="./pages/news/4"><span class="p-news__category" data-category="announce">ご注意</span>一部利用規約が変更になりました。</a></li>
+        <li class="p-newstop__item"><a href="./pages/news/3"><span class="p-news__category" data-category="news">お知らせ</span>追加機能〇〇をリリースしました！</a></li>
+        <li class="p-newstop__item"><a href="./pages/news/2"><span class="p-news__category" data-category="news">お知らせ</span>新しい公園を追加しました！</a></li>
       </ul>
       <a href="./pages/news" class="c-button c-button--third u-mgt-20">お知らせ一覧へ</a>
     </section>
+  <!-- /最近のお知らせ -->
+  <!-- 恐竜を探す -->
     <section class="p-searchtop u-mgb-80">
       <img class="p-searchtop__image" src="./assets/images/search-dinosaur01.png" alt="">
       <div class="p-searchtop__list u-mgt-10">
@@ -29,6 +33,8 @@
         <a href="" class="p-searchtop__link">50音順で<br>さがす</a>
       </div>
     </section>
+    <!-- /恐竜を探す -->
+    <!-- 恐竜ランキング -->
     <section class="p-rankingtop u-mgb-80">
       <h2 class="c-title c-title--primary u-align-c u-mgb-20">恐竜人気ランキング</h2>
       <ul class="p-rankingtop__list">
@@ -37,6 +43,8 @@
         <li class="p-rankingtop__item" data-index="3"><a href=""><img class="p-rankingtop__image" src="./assets/images/slide01.png" alt=""></a></li>
       </ul>
     </section>
+    <!-- /恐竜ランキング -->
+    <!-- 博物館・公園 -->
     <section class="p-museumtop u-mgb-40">
       <h2 class="c-title c-title--primary c-title--accent u-align-c u-mgb-20">恐竜に会いにいく</h2>
       <ul class="p-museumtop__list">
@@ -91,8 +99,12 @@
       </ul>
       <a href="./pages/museum" class="c-button c-button--primary">博物館・公園一覧へ</a>
     </section>
+    <!-- /博物館・公園 -->
+    <!-- バナー -->
     <a href=""><img src="./assets/images/slide01.png" alt=""></a>
     <a href=""><img src="./assets/images/slide01.png" alt=""></a>
+    <!-- /バナー -->
+    <!-- コラム -->
     <section class="p-columntop u-mgb-40">
       <h2 class="c-title c-title--primary c-title--accent u-align-c u-mgb-20">コラムを読む</h2>
       <ul class="p-columntop__list">
@@ -147,6 +159,7 @@
       </ul>
       <a href="./pages/column" class="c-button c-button--primary">コラムをもっと読む</a>
     </section>
+    <!-- /コラム -->
   </main>
   <%- include('./components/_footer'); %>
 </body>

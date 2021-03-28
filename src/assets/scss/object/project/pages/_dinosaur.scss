@@ -9,6 +9,7 @@
 }
 .p-dinosaur__category {
   @include boxLabel;
+  border-radius: 20px;
   color: #fff;
   &[data-category="dragon"] {
     background-color: #c45719;

@@ -13,6 +13,7 @@
 }
 .p-column__category {
   @include boxLabel;
+  border-radius: 20px;
   color: #fff;
   &[data-category="dinosaur"] {
     background-color: $column-dinosaur-c;

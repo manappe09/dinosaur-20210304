@@ -22,3 +22,14 @@
   display: block;
   font-size: .8rem;
 }
+.p-news__category {
+  @include boxLabel;
+  margin-top: .2em;
+  margin-right: .5em;
+  &[data-category="news"] {
+    background-color: $news-news-c;
+  }
+  &[data-category="announce"] {
+    background-color: $news-announce-c;
+  }
+}

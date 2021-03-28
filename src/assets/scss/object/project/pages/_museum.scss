@@ -13,12 +13,14 @@
 }
 .p-museum__area {
   @include boxLabel;
+  border-radius: 20px;
   &[data-area="ibaraki"] {
     background-color: $museum-ibaraki-c;
   }
 }
 .p-museum__category {
   @include boxLabel;
+  border-radius: 20px;
   &[data-category="park"] {
     background-color: $museum-park-c;
   }
