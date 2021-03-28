@@ -12,11 +12,7 @@
 .p-news__date {
   margin-right: 1em;
   font-size: .8rem;
-}
-.p-news__tag {
-  padding: 0 1rem;
-  background-color: $base-80-c;
-  font-size: .7rem;
+  vertical-align: top;
 }
 .p-news__link {
   display: block;

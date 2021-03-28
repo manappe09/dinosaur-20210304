@@ -14,10 +14,13 @@
 // -----------------------------------------------------------------
 @mixin boxWrapRow {
   display: flex;
+  flex-direction: column;
+  list-style: none;
 }
 @mixin boxWrapColumn {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
   .c-box {
     width: calc(50% - .5em);
   }
@@ -28,9 +31,9 @@
 @mixin boxLabel {
   display: inline-block;
   font-size: .8em;
-  margin-top: -.2em;
-  padding: 0 1em;
+  padding: 0 .5em;
   vertical-align: top;
+  line-height: 1.5;
 }
 
 // -----------------------------------------------------------------

@@ -9,9 +9,10 @@
 </head>
 <body>
   <%- include('./components/_header'); %>
+    <%- include('./components/_nav') %>
   <!-- 検索窓 -->
-  <input type="text" class="c-searchbox">
-  <button class="c-searchbox__button">検索</button>
+  <!-- <input type="text" class="c-searchbox">
+  <button class="c-searchbox__button">検索</button> -->
   <!-- /検索窓 -->
   <main class="l-main">
     <img src="./assets/images/slide01.png" alt="">
@@ -101,8 +102,8 @@
     </section>
     <!-- /博物館・公園 -->
     <!-- バナー -->
-    <a href=""><img src="./assets/images/slide01.png" alt=""></a>
-    <a href=""><img src="./assets/images/slide01.png" alt=""></a>
+    <a href="/"><img class="c-banner__image u-mgb-10" src="./assets/images/top-banner01.png" alt="" width="415" height="140"></a>
+    <a href="/pages/museum"><img class="c-banner__image" src="./assets/images/top-banner02.png" alt="" width="415" height="140"></a>
     <!-- /バナー -->
     <!-- コラム -->
     <section class="p-columntop u-mgb-40">

@@ -1,4 +1,4 @@
-<% 
+<%# 
 const data = [
   {
     label: 'dinosaur',
@@ -25,15 +25,72 @@ const data = [
       <%- include('../../components/_nav') %>
         <main class="l-main">
           <%- include('../../components/_breadcrumbs') %>
-            <h2 class="c-title c-title--accent c-title--center">コラム一覧</h2>
+            <h2 class="c-title c-title--accent u-align-c">コラム一覧</h2>
             <ul class="p-column__list">
-              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
-              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
-              <%- include('../../components/_ColumnBox', {categoryData: data[1]}) %>
-              <%- include('../../components/_ColumnBox', {categoryData: data[2]}) %>
-              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
-              <%- include('../../components/_ColumnBox', {categoryData: data[3]}) %>
-              <%- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
+              <%#- include('../../components/_ColumnBox', {categoryData: data[0]}) %>
+              <li>
+                <a href="/pages/column/1" class="c-box c-box--row">
+                  <img class="c-box__image c-box__image--row" src="../../assets/images/slide02.png" alt="" width="100" height="100">
+                  <div class="c-box__text c-box__text--row">
+                    <span class="p-column__category" data-category="dinosaur">恐竜について</span>
+                    <p>それはどうも個人へするだように限らて得るたらのですからまたはまた目黒自分忘れでしょまい。ただそう一日も自分が聴いて、元来にはなはだいうでだろと下すから、ないありうてしかしお準備が窮めたた。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/pages/column/2" class="c-box c-box--row">
+                  <img class="c-box__image c-box__image--row" src="../../assets/images/slide02.png" alt="" width="100" height="100">
+                  <div class="c-box__text c-box__text--row">
+                    <span class="p-column__category" data-category="dinosaur">恐竜について</span>
+                    <p>それはどうも個人へするだように限らて得るたらのですからまたはまた目黒自分忘れでしょまい。ただそう一日も自分が聴いて、元来にはなはだいうでだろと下すから、ないありうてしかしお準備が窮めたた。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/pages/column/3" class="c-box c-box--row">
+                  <img class="c-box__image c-box__image--row" src="../../assets/images/slide02.png" alt="" width="100" height="100">
+                  <div class="c-box__text c-box__text--row">
+                    <span class="p-column__category" data-category="dinosaur">恐竜について</span>
+                    <p>それはどうも個人へするだように限らて得るたらのですからまたはまた目黒自分忘れでしょまい。ただそう一日も自分が聴いて、元来にはなはだいうでだろと下すから、ないありうてしかしお準備が窮めたた。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/pages/column/4" class="c-box c-box--row">
+                  <img class="c-box__image c-box__image--row" src="../../assets/images/slide02.png" alt="" width="100" height="100">
+                  <div class="c-box__text c-box__text--row">
+                    <span class="p-column__category" data-category="dinosaur">恐竜について</span>
+                    <p>それはどうも個人へするだように限らて得るたらのですからまたはまた目黒自分忘れでしょまい。ただそう一日も自分が聴いて、元来にはなはだいうでだろと下すから、ないありうてしかしお準備が窮めたた。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/pages/column/5" class="c-box c-box--row">
+                  <img class="c-box__image c-box__image--row" src="../../assets/images/slide02.png" alt="" width="100" height="100">
+                  <div class="c-box__text c-box__text--row">
+                    <span class="p-column__category" data-category="dinosaur">恐竜について</span>
+                    <p>それはどうも個人へするだように限らて得るたらのですからまたはまた目黒自分忘れでしょまい。ただそう一日も自分が聴いて、元来にはなはだいうでだろと下すから、ないありうてしかしお準備が窮めたた。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/pages/column/6" class="c-box c-box--row">
+                  <img class="c-box__image c-box__image--row" src="../../assets/images/slide02.png" alt="" width="100" height="100">
+                  <div class="c-box__text c-box__text--row">
+                    <span class="p-column__category" data-category="dinosaur">恐竜について</span>
+                    <p>それはどうも個人へするだように限らて得るたらのですからまたはまた目黒自分忘れでしょまい。ただそう一日も自分が聴いて、元来にはなはだいうでだろと下すから、ないありうてしかしお準備が窮めたた。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/pages/column/7" class="c-box c-box--row">
+                  <img class="c-box__image c-box__image--row" src="../../assets/images/slide02.png" alt="" width="100" height="100">
+                  <div class="c-box__text c-box__text--row">
+                    <span class="p-column__category" data-category="dinosaur">恐竜について</span>
+                    <p>それはどうも個人へするだように限らて得るたらのですからまたはまた目黒自分忘れでしょまい。ただそう一日も自分が聴いて、元来にはなはだいうでだろと下すから、ないありうてしかしお準備が窮めたた。</p>
+                  </div>
+                </a>
+              </li>
             </ul>
         </main>
         <%- include('../../components/_footer') %>
