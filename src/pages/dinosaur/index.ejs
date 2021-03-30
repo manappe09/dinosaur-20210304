@@ -18,6 +18,30 @@ const data = [
         <main class="l-main">
           <%- include('../../components/_breadcrumbs') %>
             <h2 class="c-title c-title--accent u-align-c">恐竜のなかまたち</h2>
+            <div class="c-filter">
+              <button class="c-filter__button"><i class="fas fa-search c-filter__icon"></i>絞り込み検索</button>
+              <div class="c-filter__window u-mgt-10">
+                <h3 class="c-filter__index">種類</h3>
+                <input type="checkbox" name="category" id="bird">
+                <label for="bird">鳥盤目</label>
+                <input type="checkbox" name="category" id="dragon">
+                <label for="dragon">竜盤目</label>
+                <h3 class="c-filter__index">食べ物</h3>
+                <input type="checkbox" name="category" id="vegetable">
+                <label for="vegetable">草食</label>
+                <input type="checkbox" name="category" id="meat">
+                <label for="meat">肉食</label>
+                <input type="checkbox" name="category" id="bug">
+                <label for="bug">虫</label>
+                <input type="checkbox" name="category" id="mix">
+                <label for="mix">雑食</label><br>
+                <button class="c-filter__submit c-button c-button--third">この条件で絞り込む</button>
+              </div>
+              <select>
+                <option value="popular" selected>人気順</option>
+                <option value="name">50音順</option>
+              </select>
+            </div>
             <ul class="p-dinosaur__list">
               <%- include('../../components/_DinosaurBox', {categoryData: data[0]}) %>
               <%- include('../../components/_DinosaurBox', {categoryData: data[1]}) %>

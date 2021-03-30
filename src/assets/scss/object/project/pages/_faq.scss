@@ -19,6 +19,28 @@
   font-size: .7rem;
 }
 .p-faq__link {
-  display: block;
-  font-size: .8rem;
+  position: relative;
+  width: calc(100% - 2rem);
+  font-size: .9rem;
+  list-style: none;
+  cursor: pointer;
+  &::-webkit-details-marker {
+    display: none;
+  }
+  &::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1;
+    transform: translateY(-50%);
+  }
+}
+.p-faq__item details[open] .p-faq__link::after {
+  content: '-';
+}
+.p-faq__text {
+  margin-top: .5em;
 }
