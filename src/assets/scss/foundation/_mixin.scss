@@ -13,24 +13,25 @@
 // -----------------------------------------------------------------
 // button reset
 // -----------------------------------------------------------------
-@mixin buttonReset($border: none, $bg-color: transparent) {
-  border: none;
+@mixin buttonReset($border: none) {
+  border: $border;
   appearance: none;
   outline: none;
-  background-color: transparent !default;
 }
 // -----------------------------------------------------------------
 // Box Wrap
 // -----------------------------------------------------------------
-@mixin boxWrapRow {
+@mixin boxWrap {
   display: flex;
-  flex-direction: column;
   list-style: none;
 }
+@mixin boxWrapRow {
+  @include boxWrap;
+  flex-direction: column;
+}
 @mixin boxWrapColumn {
-  display: flex;
+  @include boxWrap;
   flex-wrap: wrap;
-  list-style: none;
   .c-box {
     width: calc(50% - .5em);
   }

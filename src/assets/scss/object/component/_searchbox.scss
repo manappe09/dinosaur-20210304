@@ -2,17 +2,7 @@
 // Searchbox
 // -----------------------------------------------------------------
 .c-searchbox {
-  width: 100%;
-  max-width: 65vw;
   height: 30px;
   line-height: 30px;
-  border: 1px solid $black-600-c;
-  border-radius: 4px;
-  &::before {
-    content: "";
-  }
-}
-.c-searchbox__button {
-  height: 30px;
-  cursor: pointer;
+  display: none;
 }

@@ -1,6 +1,9 @@
 // -----------------------------------------------------------------
 // filter
 // -----------------------------------------------------------------
+.c-filter {
+  position: relative;
+}
 .c-filter__button {
   @include buttonReset;
   position: relative;
@@ -28,13 +31,17 @@
   transform: translateY(-50%);
 }
 .c-filter__window {
-  position: relative;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
   width: 100%;
   min-height: 300px;
   height: auto;
   padding: 2rem;
   border-radius: 10px;
   background-color: $black-100-c;
+  visibility: hidden;
 }
 .c-filter__submit {
   @include buttonReset;
@@ -43,4 +50,14 @@
   right: 0;
   left: 0;
   margin: auto;
+}
+.c-filter__select__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.c-filter__select {
+  background-color: $black-100-c;
+  border: none;
+  outline: none;
+  height: 30px;
 }

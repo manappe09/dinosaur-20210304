@@ -32,6 +32,7 @@
 @import "object/component/_banners";
 @import "object/component/_profile";
 @import "object/component/_filter";
+@import "object/component/_swiper";
 
 // -----------------------------------------------------------------
 // Project
@@ -62,3 +63,6 @@
 @import "object/utility/_position";
 @import "object/utility/_size";
 @import "object/utility/_text";
+
+// import Swiper styles
+@import 'swiper/swiper-bundle.css';

@@ -37,10 +37,12 @@ const data = [
                 <label for="mix">雑食</label><br>
                 <button class="c-filter__submit c-button c-button--third">この条件で絞り込む</button>
               </div>
-              <select>
-                <option value="popular" selected>人気順</option>
-                <option value="name">50音順</option>
-              </select>
+              <div class="c-filter__select__wrapper u-mgt-10 u-mgb-80">
+                <select class="c-filter__select">
+                  <option value="popular" selected>人気順</option>
+                  <option value="name">50音順</option>
+                </select>
+              </div>
             </div>
             <ul class="p-dinosaur__list">
               <%- include('../../components/_DinosaurBox', {categoryData: data[0]}) %>

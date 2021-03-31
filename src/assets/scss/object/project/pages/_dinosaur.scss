@@ -32,7 +32,7 @@
     bottom: -20px;
     right: -30px;
     display: block;
-    background: url(../../../../images/dinosaur-accent.png) center center / contain no-repeat;
+    background: url('../../../../images/dinosaur-accent.png') center center / contain no-repeat;
     width: 160px;
     height: 40px;
     z-index: $z-level-xs;
@@ -43,7 +43,7 @@
 // related
 // -----------------------------------------------------------------
 .p-related__list {
-  @include boxWrapRow;
+  @include boxWrap;
 }
 .p-related__item {
   &:not(:first-child) {

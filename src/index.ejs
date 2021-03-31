@@ -10,12 +10,27 @@
 <body>
   <%- include('./components/_header'); %>
     <%- include('./components/_nav') %>
-  <!-- 検索窓 -->
-  <!-- <input type="text" class="c-searchbox">
-  <button class="c-searchbox__button">検索</button> -->
-  <!-- /検索窓 -->
   <main class="l-main">
-    <img src="./assets/images/slide01.png" alt="">
+  <!-- スライダー -->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./assets/images/slide01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/slide02.png" alt="">
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  <!-- /スライダー -->
   <!-- 最近のお知らせ -->
     <section class="p-newstop u-mgt-40 u-mgb-80">
       <ul class="p-newstop__list">
