@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------
+// mypage
+// -----------------------------------------------------------------
+.p-mypage__name {
+  // @include font-roboto;
+  margin-bottom: 3rem;
+  border-bottom: 3px dotted $main-100-c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.p-mypage__list {
+  @include boxWrap;
+  overflow-x: scroll;
+  width: fit-content;
+}
+.p-mypage__list__wrapper {
+  overflow-x: hidden;
+}
+.p-mypage__item {
+  flex: 0 0 40%;
+  & + .p-mypage__item {
+    margin-left: .5rem;
+  }
+}
+.p-mypage__category {
+  @include boxLabel;
+  border-radius: 20px;
+  color: #fff;
+  &[data-category="dragon"] {
+    background-color: #c45719;
+  }
+  &[data-category="bird"] {
+    background-color: #0f75b9;
+  }
+}

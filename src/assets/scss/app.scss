@@ -3,9 +3,9 @@
 // ==========================================================================
 
 @import "foundation/_reset";
+@import "foundation/_mixin";
 @import "foundation/_variables";
 @import "foundation/_base";
-@import "foundation/_mixin";
 
 // ==========================================================================
 // Layout
@@ -47,6 +47,7 @@
 @import "object/project/pages/_column";
 @import "object/project/pages/_guide";
 @import "object/project/pages/_faq";
+@import "object/project/pages/_mypage";
 @import "object/project/top/_newstop";
 @import "object/project/top/_searchtop";
 @import "object/project/top/_rankingtop";
