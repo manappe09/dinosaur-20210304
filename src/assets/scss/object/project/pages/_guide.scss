@@ -2,22 +2,7 @@
 // Guide
 // -----------------------------------------------------------------
 .p-guide__item {
-  position: relative;
-  padding: 1rem 0;
-  border-bottom: 1px solid $black-300-c;
-  list-style-type: none;
-  &:first-child {
-    border-top: 1px solid $black-300-c;
-  }
-  &::after {
-    content: '>';
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    line-height: 1;
-    font-weight: bold;
-    transform: translateY(-50%);
-  }
+  
 }
 .p-guide__date {
   margin-right: 1em;
