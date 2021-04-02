@@ -9,12 +9,14 @@
   height: 90vh;
   background-color: $main-100-c;
   border-radius: 10px 0 0 10px;
+  transition: right .3s ease-in-out;
   z-index: $z-level-xl;
   @include pc {
     width: 280px;
   }
 }
 .p-nav__close {
+  @include buttonReset;
   width: 45px;
   height: 45px;
   margin-left: auto;
