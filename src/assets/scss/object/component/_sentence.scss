@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------
+// Sentence, link text
+// -----------------------------------------------------------------
+.c-sentence {
+  & + .c-sentence {
+    margin-top: 1.8rem;
+  }
+}
+.c-linktext {
+  color: $link-c;
+  text-decoration: underline;
+}
