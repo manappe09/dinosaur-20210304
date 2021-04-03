@@ -42,14 +42,29 @@
   border-radius: 10px;
   background-color: $black-100-c;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s;
+  &.is-open {
+    visibility: visible;
+    opacity: 1;
+  }
 }
-.c-filter__submit {
-  @include buttonReset;
+.c-filter__window__bottom {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   right: 0;
   left: 0;
   margin: auto;
+  padding: 0 2rem;
+}
+.c-filter__submit {
+  @include buttonReset;
+}
+.c-filter__window__cancel {
+  display: block;
+  text-align: center;
+  font-size: .8em;
+  color: $black-600-c;
 }
 .c-filter__select__wrapper {
   display: flex;

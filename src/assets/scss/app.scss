@@ -34,6 +34,7 @@
 @import "object/component/_filter";
 @import "object/component/_listitem";
 @import "object/component/_swiper";
+@import "object/component/_pc";
 
 // -----------------------------------------------------------------
 // Project
@@ -69,3 +70,6 @@
 
 // import Swiper styles
 @import 'swiper/swiper-bundle.css';
+
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=RocknRoll+One&display=swap');

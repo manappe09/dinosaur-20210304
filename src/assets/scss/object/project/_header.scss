@@ -10,15 +10,17 @@
   left: 0;
   right: 0;
   width: 100vw;
+  max-width: 960px;
   height: 70px;
   background-color: $main-100-c;
   z-index: $z-level-l;
   @include pc {
     width: 100%;
+    margin: auto;
   }
 }
 .p-header__title {
-  font-family: "Roboto", sans-serif;
+  @include font-rocknroll;
   padding-left: 20px;
   font-size: 1.4rem;
   line-height: 70px;

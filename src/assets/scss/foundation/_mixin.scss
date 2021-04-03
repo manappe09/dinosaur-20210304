@@ -13,6 +13,13 @@
 // -----------------------------------------------------------------
 // Typography
 // -----------------------------------------------------------------
+@mixin font-rocknroll {
+  font-family: 'RocknRoll One', sans-serif;
+  font-weight: 400;
+}
+@mixin font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
 @mixin font-roboto {
   font-family: 'Roboto', sans-serif;
 }
@@ -41,6 +48,9 @@
   flex-wrap: wrap;
   .c-box {
     width: calc(50% - .5em);
+    @include pc {
+      width: calc(33% - .5em);
+    }
   }
 }
 // -----------------------------------------------------------------

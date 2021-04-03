@@ -9,11 +9,19 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: '游ゴシック','YuGothic','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
   line-height: 1.8;
   letter-spacing: .05em;
   overflow-x: hidden;
+  @include pc {
+    max-width: 960px;
+    margin: auto;
+  }
 }
 
 a {
@@ -29,4 +37,5 @@ a {
 img {
   width: 100%;
   vertical-align: bottom;
+  object-fit: cover;
 }

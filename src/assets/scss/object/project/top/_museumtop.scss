@@ -1,8 +1,8 @@
 // -----------------------------------------------------------------
 // Museum Top
 // -----------------------------------------------------------------
-.p-museumtop .c-box {
-  width: calc(50% - .5em);
+.p-museumtop {
+  @include boxWrapColumn;
 }
 .p-museumtop__list {
   display: flex;

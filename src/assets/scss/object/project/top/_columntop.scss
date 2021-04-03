@@ -1,8 +1,8 @@
 // -----------------------------------------------------------------
 // Column Top
 // -----------------------------------------------------------------
-.p-columntop .c-box {
-  width: calc(50% - .5em);
+.p-columntop {
+  @include boxWrapColumn;
 }
 .p-columntop__list {
   display: flex;

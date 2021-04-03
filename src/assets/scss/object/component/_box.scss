@@ -40,6 +40,14 @@
   flex-direction: column;
   &:nth-child(even) {
     margin-left: 1rem;
+    @include pc {
+      margin-left: 0;
+    }
+  }
+  @include pc {
+    &:not(:nth-child(3n + 1)) {
+      margin-left: 1rem;
+    }
   }
 }
 .c-box__text--column {
